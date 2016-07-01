@@ -1,0 +1,85 @@
+
+{% extends 'base.html' %}
+
+{% block styles %}
+
+{% endblock %}
+
+{% block breadcrumb %}
+    <li class="active">Home</li>
+{% endblock %}
+
+{% block head %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title> 花間一壺酒 </title>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="card-container">
+                    <div class="card-background">
+                        <div class="camera-container">
+                            <div id="my_camera" class="center-block" style="width:320px; height:240px;"></div> 
+                        </div>
+                        <div id="polaroid-overlay"> </div>
+                        <H1 class="bac-level">0.28 %BAC🤑</H1>
+                      <a href="javascript:void(take_snapshot())"><H1 class="text-center">TAKE A DEEP BREATH</H1></a>
+                      </div>
+                    </div>
+                </div>
+        </div>
+        <div class="row">
+            <div id="my_result"></div> 
+            <div id="owl-demo" class="owl-carousel">
+            </div>
+        </div>
+    </div>
+
+        <script language="JavaScript">
+            Webcam.set({
+                // live preview size
+                width: 640,
+                height: 480,
+                // device capture size
+                dest_width: 640,
+                dest_height: 480,
+                // final cropped size
+                crop_width: 480,
+                crop_height: 480,
+                // format and quality
+                image_format: 'jpeg',
+                jpeg_quality: 90,
+                // flip horizontal (mirror mode)
+                flip_horiz: true
+            });
+
+            Webcam.attach( '#my_camera' );
+
+            //TO DO create a masonry view reading json element of pictures
+            //TO DO add new image to json
+            function take_snapshot() {
+                Webcam.snap( function(data_uri) {
+                    document.getElementById('my_result').innerHTML = '<img src="'+data_uri+'"/ class="captured">';
+                    var request = new XMLHttpRequest();
+                    request.open("GET", "/assets/json/customData.json", false);
+                    request.send(null)
+                    var my_JSON_object = JSON.parse(request.responseText);
+                    alert (my_JSON_object["items"][1].img);
+                    // $.getJSON('/assets/json/customData.json', function(data) {         
+                    //     alert(data);
+                    // });
+
+                    // var words = data_uri;
+                    // alert(words);
+                } );
+                
+            }
+        </script>
+
+{% endblock %}
