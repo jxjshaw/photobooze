@@ -15,6 +15,7 @@ To run locally, navigate to the folder and type: `node ./bin/www.js` and open **
 # Contribute #
 
 To do:
+- Parse/read breathlyzer variable from particle api
 - Take pictures using canvas
 - Store images (save images to a DB or something)
 - Enclosure/mouthpeice for breathlyzer
