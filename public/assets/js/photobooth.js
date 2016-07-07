@@ -26,28 +26,25 @@
   });
  
   // import images from json file to film strip
-  $("#owl-demo").owlCarousel({
-    jsonPath : '/assets/json/customData.json',
-    jsonSuccess : customDataSuccess
-  });
+  // $("#owl-demo").owlCarousel({
+  //   jsonPath : '/assets/json/customData.json',
+  //   jsonSuccess : customDataSuccess
+  // });
  
-  function customDataSuccess(data){
-    var content = "";
-    for(var i in data["items"]){
+  // function customDataSuccess(data){
+  //   var content = "";
+  //   for(var i in data["items"]){
        
-       var img = data["items"][i].img;
-       var alt = data["items"][i].alt;
+  //      var img = data["items"][i].img;
+  //      var alt = data["items"][i].alt;
  
-       content += "<img src=\"" +img+ "\" alt=\"" +alt+ "\">"
-    }
-    $("#owl-demo").html(content);
-  }
-
-
+  //      content += "<img src=\"" +img+ "\" alt=\"" +alt+ "\">"
+  //   }
+  //   $("#owl-demo").html(content);
+  // }
 });
 
-
-  //Shuffle Pictures Function
+  //Shuffle Gallery Function
   function shuffle_Pics(){
      $('.items').each(function (index, element) {
     var items = $(this).find('li img');
@@ -68,26 +65,18 @@
     });
   });
   };
- 
- 
-  
 
-
-
-            //TO DO create a masonry view reading json element of pictures
-            //TO DO add new image to json
+  // Screencap Function
   function take_snapshot() {
 
     Webcam.snap( function(data_uri) {
-      // document.getElementById('my_result').innerHTML = '<img src="'+data_uri+'"/ class="captured">';
+      
       
       //Add snapshot to list
       var newPic = '<img src="'+data_uri+'"/ class="captured">';
       $("ul").append("<li>"+newPic+"</li>");
       window.scrollTo(0,document.body.scrollHeight);
       shuffle_Pics();
-
-
 
       // //Read from json
       // var request = new XMLHttpRequest();
@@ -97,18 +86,15 @@
       // var picture = my_JSON_object["items"][1].img;
       // alert (picture);
       // $("ul").append("<li><img src="+picture+"></li>");
-
       // $.getJSON('/assets/json/customData.json', function(data) {         
       //     alert(data);
       // });
-
       // var words = data_uri;
       // alert(words);
-                } );        
-    
-                
+      // document.getElementById('my_result').innerHTML = '<img src="'+data_uri+'"/ class="captured">';
+                } );                    
   };
 
 
-  
+
 
