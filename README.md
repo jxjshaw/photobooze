@@ -18,7 +18,7 @@ To do:
 - Update breathlyzer reading (Parse breathlyzer var from particle api, update dom element)
 - Take pictures using canvas (html 2 canvas 2 png ?? )
 - Store images (save images to a DB)
-- Mouthpiece (3d ecnslore)
+- Mouthpiece (3d enclosure)
 - Making it cuter (springy animations, more sparkly shit, etc)
 - Exporting image (Enter # to send to phone or something)
 
