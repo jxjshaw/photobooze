@@ -42,17 +42,21 @@ a:hover {
 }
 
 h1 {
-  color: rgba(15,15,15,.87);
+  color: rgba(15,15,15,.67);
   font-family: savaro-stencil;
   font-family: kust;
   font-family: nippon-latin-bold;
-  font-size: 24px;
+  font-size: 18px;
   letter-spacing: 5px;
 }
 
+
+
 /* CUSTOM ELEMENTS */
+
 .captured {
-  width: 25%;
+  width: 100%;
+  opacity: 0.87;
 }
 
 .container {
@@ -60,32 +64,37 @@ h1 {
 
 .card-container {
   padding: 30px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 11;
 }
 
 .card-background {
-  width: 510px;
-  height: 620px;
+  width: 490px;
+  height: 610px;
   background-color: rgba(246,246,246,0.6);
-  background-color: rgba(255,255,255,0.59);
+  background-color: rgba(255,255,255,0.87);
   border: 1px solid rgba(151,151,151,1.0);
   border-radius: 8px;
   box-shadow: 0px 2px 8px  rgba(0,0,0,0.5)
 }
 
 .camera-container {
-  padding-top: 22px;
+  padding-top: 8px;
 }
 
 #polaroid-overlay {
   position: absolute;
-  left: 50.25%;
-  top: 46.15%;
-  transform: translate(-48.75%,-54.3%);
+  left: 49.05%;
+  top: 44.72%;
+  transform: translate(-48.70%,-54.3%);
   z-index: 9;
   width: 480px;
   height: 480px;
   background-color: rgba(255,100,100,0.7);
-  mix-blend-mode: exclusion;
+  mix-blend-mode: screen;
   transition: 0.7s all ease-out;
 }
 
@@ -98,7 +107,8 @@ h1 {
   z-index: 10;
   font-family: cheerful-party;
   font-size: 36px;
-  letter-spacing: 0px;
+  letter-spacing: 3px;
+  word-spacing: 3px;
 }
 
 #owl-demo .item{
@@ -112,3 +122,62 @@ h1 {
   border-radius: 3px;
   text-align: center;
 }
+
+.shutter {
+  margin-top: 3%;
+  border-radius: 0px;
+  background-color: rgba(255,220,225,1.0);
+  border-color: rgba(0,0,0,0.0);
+
+}
+
+.shutter :hover {
+  border-color: rgba(0,0,0,0.0);
+  color: rgba(255,0,0,0.2);
+}
+
+
+
+/* SNAPSHOT PILE */
+
+.items ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+.items ul li {
+  display: inline-block;
+  /*spacing needs to be random*/
+  width: 200px;
+  height: 200px;
+}
+.items ul li img {
+  display: block;
+  width: 100px;
+  height: 100px;
+ background: #eee;
+  margin: 0 auto;
+  position: relative;
+  transition: all 400ms ease;
+  box-shadow: 1px 2px 3px #111;
+}
+.items ul li img b {
+  line-height: 64px;
+}
+.items ul li img i {
+  position: absolute;
+  top: 100%;
+  color: #ccc;
+  padding-top: 0.5em;
+  left: 50%;
+  margin-left: -32px;
+  width: 100%;
+  text-shadow: 1px 2px 3px #111;
+}
+.list-container {
+  width: 100%;
+  z-index: 1;
+}
+
+
