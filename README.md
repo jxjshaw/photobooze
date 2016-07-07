@@ -1,4 +1,4 @@
-# /* house party breathlyzer */
+# /* House party breathylzer filter */
 This is a Web based photo booth with a snap style filter and breathalyzer readings from a particle photon.
 
 
