@@ -21,6 +21,7 @@ To do:
 - Mouthpiece (3d enclosure)
 - Making it cuter (springy animations, more sparkly shit, etc)
 - Exporting image (Enter # to send to phone or something)
+- Carrying the keg up the stairs 😑
 
 # See you friday!!! #
 
