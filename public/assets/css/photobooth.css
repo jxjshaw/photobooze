@@ -20,6 +20,11 @@
   src: url('../fonts/kust.otf');
 }
 
+@font-face {
+  font-family: 'digital';
+  src: url('../fonts/digital.ttf');
+}
+
 img {
   width: 100%;
 }
@@ -54,7 +59,7 @@ h1 {
 
 .captured {
   width: 100%;
-  opacity: 0.87;
+  opacity: 1.0;
 }
 
 .container {
@@ -109,6 +114,15 @@ h1 {
   word-spacing: 3px;
 }
 
+.device {
+  position: absolute;
+  left: 80%;
+  top: 70%;
+  transform: translate(-20%, -30%);
+  color: rgba(255,255,255,1);
+  z-index: 12;
+  width: 180px;
+}
 #owl-demo .item{
   background: #a1def8;
   padding: 30px 0px;
@@ -150,6 +164,13 @@ h1 {
   width: 200px;
   height: 200px;
 }
+.items ul li :hover {
+  width: 105px;
+  height: 105px;
+  transition: all 80ms ease-out;
+  z-index: 20;
+
+}
 .items ul li img {
   display: block;
   width: 100px;
@@ -177,5 +198,4 @@ h1 {
   width: 100%;
   z-index: 1;
 }
-
 
