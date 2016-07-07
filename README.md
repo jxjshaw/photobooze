@@ -15,11 +15,12 @@ To run locally, navigate to the folder and type: `node ./bin/www.js` and open **
 # Contribute #
 
 To do:
-- Parse/read breathlyzer variable from particle api
-- Take pictures using canvas
-- Store images (save images to a DB or something)
-- Enclosure/mouthpeice for breathlyzer
-- Visual design (transitions, animations, etc)
+- Update breathlyzer reading (Parse breathlyzer var from particle api, update dom element)
+- Take pictures using canvas (html 2 canvas 2 png ?? )
+- Store images (save images to a DB)
+- Mouthpiece (3d ecnslore)
+- Making it cuter (springy animations, more sparkly shit, etc)
+- Exporting image (Enter # to send to phone or something)
 
 # See you friday!!! #
 
