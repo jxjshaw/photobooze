@@ -31,8 +31,24 @@ img {
 
 body {
   background: rgba(245,161,85,1.0);
-  background-image: url("../img/bg.png");
+  background: rgba(194,178,218,1.0);
+  background: black;
+
 }
+
+/*.bg-overlay {
+
+    background-image: url("../img/bg.png");
+    background-size: contain;
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:-1;
+    opacity: 0.3;
+
+}*/
 
 html {
 }
@@ -97,8 +113,20 @@ h1 {
   width: 480px;
   height: 480px;
   background-color: rgba(255,100,100,0.7);
-  mix-blend-mode: screen;
-  transition: 0.7s all ease-out;
+  mix-blend-mode: difference;
+  transition: 0.7s all ease-in-out;
+}
+
+#polaroid-exposure {
+  position: absolute;
+  left: 49.05%;
+  top: 44.72%;
+  transform: translate(-48.70%,-54.3%);
+  z-index: 10;
+  width: 480px;
+  height: 480px;
+  background-color: rgba(0,0,0,0.87);
+  transition: 0.7s all ease-in-out;
 }
 
 .bac-level {
@@ -151,14 +179,15 @@ h1 {
 .shutter {
   margin-top: 3%;
   border-radius: 0px;
-  background-color: rgba(255,220,225,1.0);
+  background-color: rgba(241,241,241,1.0);
   border-color: rgba(0,0,0,0.0);
 
 }
 
 .shutter :hover {
   border-color: rgba(0,0,0,0.0);
-  color: rgba(255,0,0,0.2);
+  color: rgba(255,0,0,1.0);
+  transition: 0.7s all ease-out;
 }
 
 
@@ -176,18 +205,20 @@ h1 {
   /*spacing needs to be random*/
   width: 200px;
   height: 200px;
+  float: left;
 }
 .items ul li :hover {
-  width: 105px;
-  height: 105px;
+ /* width: 105px;
+  height: 105px;*/
+  opacity: 0.9;
   transition: all 80ms ease-out;
-  z-index: 20;
+ /* z-index: 20;*/
 
 }
 .items ul li img {
   display: block;
-  width: 100px;
-  height: 100px;
+  width: 192px;
+  height: 192px;
  background: #eee;
   margin: 0 auto;
   position: relative;

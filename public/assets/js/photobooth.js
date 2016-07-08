@@ -24,26 +24,26 @@
   });
 
   //GALLERY SHUFFLE FUNCTION
-  function shuffle_Pics(){
-    $('.items').each(function (index, element) {
-    var items = $(this).find('li img');
-    items.each( function (index, element) {
-      var item = $(this);
-      var TopBottom = Math.random() < 0.5 ? 'top' : 'bottom';
-      var LeftRight = Math.random() < 0.5 ? 'left' : 'right';
-      var PosNeg = Math.random() < 0.5 ? '-' : '+';
-      var min = 0;
-      var VertMax = item.height()/2;
-      var HorMax = item.width()/2;
-      var VertPos = Math.floor(Math.random() * (VertMax - min + 1)) + min;
-      var HorPos = Math.floor(Math.random() * (HorMax - min + 1)) + min;
-      var CSS = {};
-      CSS[TopBottom] = PosNeg+VertPos+'px';
-      CSS[LeftRight] = PosNeg+HorPos+'px';
-      item.css(CSS);
-      });
-    });
-  };
+  // function shuffle_Pics(){
+  //   $('.items').each(function (index, element) {
+  //   var items = $(this).find('li img');
+  //   items.each( function (index, element) {
+  //     var item = $(this);
+  //     var TopBottom = Math.random() < 0.5 ? 'top' : 'bottom';
+  //     var LeftRight = Math.random() < 0.5 ? 'left' : 'right';
+  //     var PosNeg = Math.random() < 0.5 ? '-' : '+';
+  //     var min = 0;
+  //     var VertMax = item.height()/2;
+  //     var HorMax = item.width()/2;
+  //     var VertPos = Math.floor(Math.random() * (VertMax - min + 1)) + min;
+  //     var HorPos = Math.floor(Math.random() * (HorMax - min + 1)) + min;
+  //     var CSS = {};
+  //     CSS[TopBottom] = PosNeg+VertPos+'px';
+  //     CSS[LeftRight] = PosNeg+HorPos+'px';
+  //     item.css(CSS);
+  //     });
+  //   });
+  // };
 
   // SCREENCAP FUNCTION
   function take_snapshot() {
@@ -65,7 +65,11 @@
         $.getJSON(requestURL, function(json) {
                  $('span').text(json["result"]);
                  console.log(json["result"]);
+                 $('#polaroid-overlay').css("opacity", (json["result"])-215/-10);
+                 $('#polaroid-exposure').css("opacity", (json["result"]-215)/-10);
                  });
+                  //new comments p
+                  //result <0.02 ? span.text(no alcohol detected) : you've been drinking! 
       }, 500);
   }
 
