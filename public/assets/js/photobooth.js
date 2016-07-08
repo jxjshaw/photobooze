@@ -15,6 +15,7 @@
     });
     // Initialize Webcam
     Webcam.attach('#my_camera');
+    get_reading();
     // Randomize Filter On Click 
     $(document).click(function(){
       var randomcolors = '#' + Math.floor(Math.random() * 16777215).toString(16); 
@@ -51,9 +52,22 @@
       var newPic = '<img src="'+data_uri+'"/ class="captured">';
       $("ul").append("<li>"+newPic+"</li>");
       window.scrollTo(0,document.body.scrollHeight);
-      shuffle_Pics();
+      shuffle_Pics(); 
     });                    
   };
+
+  // GET READING FUNCTION
+  function get_reading() {
+      var link = "https://api.particle.io/v1/devices/1b0029001747343339383037/bac?access_token=246382cdf7794bad141b411ec638b1c91c8b1553";
+
+      window.setInterval(function() {
+        requestURL = link;
+        $.getJSON(requestURL, function(json) {
+                 $('span').text(json["result"]);
+                 console.log(json["result"]);
+                 });
+      }, 500);
+  }
 
 
     // Garbage~~~~~~~

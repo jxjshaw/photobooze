@@ -114,6 +114,19 @@ h1 {
   word-spacing: 3px;
 }
 
+#unit {
+  position: absolute;
+  left: 50%;
+  top: 26%;
+  transform: translate(-50%, -70%);
+  color: rgba(255,255,255,1);
+  z-index: 10;
+  font-family: cheerful-party;
+  font-size: 28px;
+  letter-spacing: 5px;
+  word-spacing: 3px;
+}
+
 .device {
   position: absolute;
   left: 80%;
