@@ -58,8 +58,8 @@
 
   // GET READING FUNCTION
   function get_reading() {
-      var deviceid = "device_id_here";
-      var token = "access_token_here";
+      var deviceid = "1b0029001747343339383037";
+      var token = "246382cdf7794bad141b411ec638b1c91c8b1553";
       var link = "https://api.particle.io/v1/devices/"+deviceid+"/bac?access_token="+token;
 
       window.setInterval(function() {
