@@ -58,16 +58,32 @@
 
   // GET READING FUNCTION
   function get_reading() {
-      var link = "https://api.particle.io/v1/devices/1b0029001747343339383037/bac?access_token=246382cdf7794bad141b411ec638b1c91c8b1553";
+      var deviceid = "device_id_here";
+      var token = "access_token_here";
+      var link = "https://api.particle.io/v1/devices/"+deviceid+"/bac?access_token="+token;
 
       window.setInterval(function() {
         requestURL = link;
         $.getJSON(requestURL, function(json) {
-                 $('span').text(json["result"]);
-                 console.log(json["result"]);
-                 $('#polaroid-overlay').css("opacity", (json["result"])-215/-10);
-                 $('#polaroid-exposure').css("opacity", (json["result"]-215)/-10);
-                 });
+                 var bac = json["result"].toFixed(4);
+                 // bac -= .1500
+                 // bac = bac.toFixed(4);
+                 var min = 0.1;
+                 var max = 0.2;
+                 var opacity = Math.min(1., (bac - min) / (max - min));
+                 $('span').text(bac);
+                 $('#polaroid-overlay').css("opacity", opacity);
+                 $('#polaroid-exposure').css("opacity", opacity);
+                 if (bac > 0.14) {
+                    var randomcolors = '#' + Math.floor(Math.random() * 16777215).toString(16); 
+                    $('#polaroid-overlay').css("background-color", randomcolors);
+                    take_snapshot();
+                }
+        });
+
+                console.log(bac);
+               
+
                   //new comments p
                   //result <0.02 ? span.text(no alcohol detected) : you've been drinking! 
       }, 500);
