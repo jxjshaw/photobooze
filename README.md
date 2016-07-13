@@ -14,6 +14,8 @@ To run locally, navigate to the folder and type: `node ./bin/www.js` and open **
 ![alt text](http://i.imgur.com/vEAZXpc.gifv)
 ![alt text](http://i.imgur.com/vEAZXpc.gif)
 [Imgur](http://i.imgur.com/vEAZXpc.gifv)
+![alt text](https://j.gifs.com/DkORvk.gif "Photobooze draft")
+
 
 
 # Contribute #
