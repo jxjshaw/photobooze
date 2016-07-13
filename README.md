@@ -3,7 +3,7 @@ This is a Web based photo booth with a snap style filter and breathalyzer readin
 
 
 ![alt text](http://i.imgur.com/AyPkymm.png "Photobooze draft")
-![alt text](http://i.imgur.com/sOL38eY.jpg "Photobooze draft")
+
 
 
 
@@ -11,10 +11,12 @@ This is a Web based photo booth with a snap style filter and breathalyzer readin
 
 To run locally, navigate to the folder and type: `node ./bin/www.js` and open **localhost:3000**
 
+![alt text](http://i.imgur.com/sOL38eY.jpg "Photobooze draft")
 
-![alt text](http://i.imgur.com/kqehx7O.jpg "Breathlyzer prototype")
 
 # Contribute #
+
+![alt text](http://i.imgur.com/kqehx7O.jpg "Breathlyzer prototype")
 
 To do:
 - Update breathlyzer reading (Parse breathlyzer var from particle api, update dom element)
