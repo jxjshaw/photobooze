@@ -3,6 +3,8 @@ This is a Web based photo booth with a snap style filter and breathalyzer readin
 
 
 ![alt text](http://i.imgur.com/AyPkymm.png "Photobooze draft")
+![alt text](http://i.imgur.com/sOL38eY.jpg "Photobooze draft")
+
 
 
 # Try it out #
