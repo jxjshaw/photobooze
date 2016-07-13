@@ -2,8 +2,7 @@
 This is a Web based photo booth with a snap style filter and breathalyzer readings from a particle photon.
 
 
-![alt text](http://i.imgur.com/AyPkymm.png "Photobooze draft")
-
+![alt text](http://i.imgur.com/sOL38eY.jpg "Photobooze draft")
 
 
 
@@ -11,7 +10,8 @@ This is a Web based photo booth with a snap style filter and breathalyzer readin
 
 To run locally, navigate to the folder and type: `node ./bin/www.js` and open **localhost:3000**
 
-![alt text](http://i.imgur.com/sOL38eY.jpg "Photobooze draft")
+
+![alt text](http://i.imgur.com/vEAZXpc.gifv "Photobooze draft")
 
 
 # Contribute #
@@ -26,6 +26,9 @@ To do:
 - Making it cuter (springy animations, more sparkly shit, etc)
 - Exporting image (Enter # to send to phone or something)
 - Carrying the keg up the stairs 😑
+
+![alt text](http://i.imgur.com/AyPkymm.png "Photobooze draft")
+
 
 # See you friday!!! #
 
