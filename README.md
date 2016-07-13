@@ -32,7 +32,7 @@ To do:
 # See you friday!!! #
 
 
-![alt text](http://i.imgur.com/zGGRhwk.jpg "Bday card")
+<!--![alt text](http://i.imgur.com/zGGRhwk.jpg "Bday card")-->
 
 # Update #
 
