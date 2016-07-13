@@ -23,9 +23,8 @@ To do:
 - Making it cuter (springy animations, more sparkly shit, etc)
 - Exporting image (Enter # to send to phone or something)
 - Carrying the keg up the stairs 😑
-- 
 
-![alt text](http://i.imgur.com/kqehx7O.jpg "Breathlyzer prototype")
+<!--![alt text](http://i.imgur.com/kqehx7O.jpg "Breathlyzer prototype")-->
 <!--![alt text](http://i.imgur.com/AyPkymm.png "Photobooze draft")-->
 
 
