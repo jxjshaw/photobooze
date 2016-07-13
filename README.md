@@ -11,16 +11,9 @@ This is a Web based photo booth with a snap style filter and breathalyzer readin
 To run locally, navigate to the folder and type: `node ./bin/www.js` and open **localhost:3000**
 
 
-![alt text](http://i.imgur.com/vEAZXpc.gifv)
-![alt text](http://i.imgur.com/vEAZXpc.gif)
-[Imgur](http://i.imgur.com/vEAZXpc.gifv)
-![alt text](https://j.gifs.com/DkORvk.gif "Photobooze draft")
-
-
-
 # Contribute #
 
-![alt text](http://i.imgur.com/kqehx7O.jpg "Breathlyzer prototype")
+
 
 To do:
 - Update breathlyzer reading (Parse breathlyzer var from particle api, update dom element)
@@ -30,11 +23,19 @@ To do:
 - Making it cuter (springy animations, more sparkly shit, etc)
 - Exporting image (Enter # to send to phone or something)
 - Carrying the keg up the stairs 😑
+- 
 
-![alt text](http://i.imgur.com/AyPkymm.png "Photobooze draft")
+![alt text](http://i.imgur.com/kqehx7O.jpg "Breathlyzer prototype")
+<!--![alt text](http://i.imgur.com/AyPkymm.png "Photobooze draft")-->
 
 
 # See you friday!!! #
 
 
 ![alt text](http://i.imgur.com/zGGRhwk.jpg "Bday card")
+
+# Update #
+
+![alt text](http://i.imgur.com/XKrmzSg.gif)
+![alt text](http://i.imgur.com/nrpvyKv.gif)
+![alt text](http://i.imgur.com/RPpWU8p.gif)
