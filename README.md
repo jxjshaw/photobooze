@@ -11,7 +11,7 @@ This is a Web based photo booth with a snap style filter and breathalyzer readin
 To run locally, navigate to the folder and type: `node ./bin/www.js` and open **localhost:3000**
 
 
-![alt text](http://i.imgur.com/vEAZXpc.gifv "Photobooze draft")
+![alt text](http://i.imgur.com/vEAZXpc.gif "Photobooze draft")
 
 
 # Contribute #
